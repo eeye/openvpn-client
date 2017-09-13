@@ -8,7 +8,7 @@ docker run -d --name vpn-client \
   --cap-add=NET_ADMIN \
   --device /dev/net/tun \
   -v /path/with/vpn/configs:/vpn \
-  ekristen/openvpn-client --config /vpn/client.ovpn --auth-nocache
+  ebey/openvpn-client --config /vpn/client.ovpn --auth-nocache
 ```
 
 ### Route container traffic
